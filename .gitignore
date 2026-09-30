@@ -1,0 +1,13 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Editor
+.vscode/
+.idea/
+
+# Dependencias / temporarios
+node_modules/
+*.log

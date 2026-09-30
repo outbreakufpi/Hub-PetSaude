@@ -1,0 +1,9 @@
+services:
+  portal:
+    build: .
+    container_name: petsaude-portal
+    restart: unless-stopped
+    # Porta 8080 do host → porta 80 do container Nginx
+    # O Nginx do HOST (fora do Docker) faz proxy_pass para 127.0.0.1:8080
+    ports:
+      - "127.0.0.1:8080:80"
